@@ -1,0 +1,25 @@
+# Learning Django Rest Framework
+
+This repo contains the apps I built while learning [Django REST Framework](https://www.django-rest-framework.org/).
+
+All the apps are built using Django 2.1+ and django-rest-framework 3.9+ on Python 3.6
+
+## Setup
+
+- Clone this repo
+  ```bash
+  $ git clone https://github.com/sdabhi23/learning-drf.git
+  ```
+
+- Install dependencies
+  ```bash
+  $ pip install -r requirements.txt
+  ```
+
+## Contents
+
+- An offline copy of Django's documentation is avaiable in [resources]().
+
+- An offline copy of [Building APIs with Django and DRF](https://books.agiliq.com/projects/django-api-polls-tutorial/en/latest/)  by Agiliq is avaiable in [resources]().
+
+- Starter app to understand basics of Django is available under [basic](). It was built by following the [polls app tutorial](https://docs.djangoproject.com/en/2.1/intro/tutorial01/) from Django's documentation.

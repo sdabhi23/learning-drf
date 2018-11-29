@@ -1,0 +1,12 @@
+li a {
+    color: green;
+}
+
+li {
+    color: white;
+    font-size: 2em;
+}
+
+body {
+    background: #222 url("images/tile_1.png");
+}
