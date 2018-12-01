@@ -26,4 +26,4 @@ All the apps are built using Django 2.1+ and django-rest-framework 3.9+ on Pytho
 
 - Starter app to understand basics of Django is available under [basic](https://github.com/sdabhi23/learning-drf/tree/master/basic). It was built by following the [polls app tutorial](https://docs.djangoproject.com/en/2.1/intro/tutorial01/) from Django's documentation. Live app available at [https://django-basic.sdabhi23.repl.co](https://django-basic.sdabhi23.repl.co)
 
-- The polls api app covered in **Book 1** is avaiable under [pollsapi](https://github.com/sdabhi23/learning-drf/tree/master/pollsapi).
+- The polls api app covered in **Book 1** is avaiable under [pollsapi](https://github.com/sdabhi23/learning-drf/tree/master/pollsapi). Live app available at [https://drf-pollsapi.sdabhi23.repl.co](https://drf-pollsapi.sdabhi23.repl.co)
