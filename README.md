@@ -1,5 +1,7 @@
 # Learning Django Rest Framework
 
+[![Build Status](https://travis-ci.org/sdabhi23/learning-drf.svg?branch=master)](https://travis-ci.org/sdabhi23/learning-drf)
+
 This repo contains the apps I built while learning [Django REST Framework](https://www.django-rest-framework.org/).
 
 All the apps are built using Django 2.1+ and django-rest-framework 3.9+ on Python 3.6
