@@ -31,10 +31,10 @@ class PollViewSet(viewsets.ModelViewSet):
 
     def destroy(self, request, *args, **kwargs):
         poll = Poll.objects.get(pk=kwargs["pk"])
-        if(request.user.pk == poll.created_by):
+        if(request.user.pk == poll.created_by.pk):
             return super().destroy(request, *args, **kwargs)
         else:
-            return Response({"detail": "You can not delete this poll."}, status=status.HTTP_400_BAD_REQUEST)
+            return Response({"error": "you can not delete this poll"}, status=status.HTTP_401_UNAUTHORIZED)
 
 # class PollList(generics.ListCreateAPIView):
 #     queryset = Poll.objects.all()
@@ -53,10 +53,10 @@ class ChoiceList(generics.ListCreateAPIView):
 
     def post(self, request, *args, **kwargs):
         poll = Poll.objects.get(pk=kwargs["pk"])
-        if(request.user.pk == poll.created_by):
+        if(request.user.pk == poll.created_by.pk):
             return super().post(request, *args, **kwargs)
         else:
-            return Response({"detail": "You can not create choice for this poll."}, status=status.HTTP_400_BAD_REQUEST)
+            return Response({"error": "you can not create choice for this poll"}, status=status.HTTP_401_UNAUTHORIZED)
 
 class CreateVote(APIView):
     def post(self, request, pk, choice_pk):
